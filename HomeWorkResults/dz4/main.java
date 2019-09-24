@@ -1,8 +1,7 @@
 package dz4;
-import java.lang.reflect.Array;
 import java.util.Scanner;
 
-class card {
+class Card {
 
     public static void main(String[]args){
         Scanner nc = new Scanner(System.in);
@@ -10,13 +9,13 @@ class card {
         int count=0;
         String numberCard;
         do {
-            System.out.print("Введите номер карты: " + "\n");
+            System.out.print("Введите номер карты: \n");
             numberCard = nc.next();
             if (numberCard.length() != 16)
-                System.out.print("Введен не корректный номeр карты. Долно быть 16 символов." + "\n");
+                System.out.print("Введен не корректный номeр карты. Долно быть 16 символов.\n");
         }while (numberCard.length() != 16);
 
-        System.out.print("Ведется проверка карты по алгоритму луна . . ."+ "\n");
+        System.out.print("Ведется проверка карты по алгоритму луна . . .\n");
 
         for (int i =0; i < arrNumberCard.length; i++) {
             arrNumberCard[i] = Integer.parseInt(numberCard.substring(i, i + 1));
